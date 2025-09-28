@@ -1,0 +1,41 @@
+WEEK 2 LAB NOTES
+
+Creating an EC2 with SSH
+	• Step 1: Create a security group
+	• Step 2: In "Inbound Rules", create the first line of configurations (HTTP, Anywhere   	          IPV-4)
+	• Step 3: Create a second inbound rule (SSH, Anywhere IPV4)
+	• Step 4: Continue with basic security group setup
+
+
+Creating an EC2 Template
+	• Step1:  Create an instance (follow steps to create an instance)
+	• Step 2: Go to Actions -- Images and Templates -- Create template from instance"
+	• Step 3: Create a Launch template name and give it a template version description
+	• Step 4: Double check all details are good -- Launch instance 
+	• Step 5: Go to "Launch Templates" and you should see you newly created template of the 	          instance you launched.
+
+SSH into Instance (must have SSH inbound rule)
+	• Step 1: Go to instances
+	• Step 2: Check mark the instance you want to select
+	• Step 3: Click "Connect"
+	• Step 4: On the next page, click the orange button "Connect". Now you have connected to 		  your instance.
+	• To use Ping -- type in 8.8.8.8 (this is Google. It is an example of pinging).
+	• To stop the ping -- press Ctrl + C
+	• To restart the ping -- press up arrow
+	
+
+Launch an EC2 template
+	• Step 1: Go to Instances
+	• Step 2: Click the drop down button on the orange named "Launch Instance from Template"
+	• Step 3: Select the template you created
+	• Step 4: Double check your configurations
+	• Step 5: Click "Launch Instance"
+		○ You can also select the number of instance you want to launch before you 	  	           launch instance.
+
+Version Control (Modifying a Template)
+	• Step1: Go to Launch Templates
+	• Step2: Click the template you want to modify 
+	• Step3: Click "Actions" then "Modify template (create new version)
+	• Step4: Name template in "Template version description"
+	• Step5: Go to "Advanced details" and modify your script.
+	• Step6: Once done, click orange button "Create template version"
